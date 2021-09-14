@@ -31,8 +31,7 @@
     "types": ["jest", "node"]
   },
   "include": [
-    "src/**/*",
-    "test/**/*.tsx"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules/**"
