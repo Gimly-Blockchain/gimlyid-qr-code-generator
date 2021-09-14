@@ -10,6 +10,7 @@ export interface QRProps {
   type: QRType;
   did: string;
   mode: QRMode;
+  redirectUrl: string;
   bgColor?: string;
   fgColor?: string;
   level?: 'L' | 'M' | 'Q' | 'H';

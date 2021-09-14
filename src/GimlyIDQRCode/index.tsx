@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { QRProps } from '../types';
 
 export const GimlyIDQRCode: FC<QRProps> = (QRProps) => {
-  const value = `nonce=${uuidv4()},type=${QRProps.type},did=${QRProps.did},mode=${QRProps.mode}`;
+  const value = `nonce=${uuidv4()},type=${QRProps.type},did=${QRProps.did},mode=${QRProps.mode},redirectUrl=${QRProps.redirectUrl}`;
   return (
     <QRCode
       value={value}
