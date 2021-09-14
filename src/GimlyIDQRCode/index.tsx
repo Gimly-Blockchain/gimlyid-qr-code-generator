@@ -5,16 +5,17 @@ import { v4 as uuidv4 } from 'uuid';
 import { QRProps } from '../types';
 
 export const GimlyIDQRCode: FC<QRProps> = (QRProps) => {
+  const {type, did, mode, redirectUrl, onGenerate, bgColor, fgColor, level, size, title} = QRProps;
   const nonce = uuidv4();
-  const value = `nonce=${nonce},type=${QRProps.type},did=${QRProps.did},mode=${QRProps.mode},redirectUrl=${QRProps.redirectUrl}`;
+  const value = `nonce=${nonce},type=${type},did=${did},mode=${mode},redirectUrl=${redirectUrl}`;
 
-  if (QRProps.onGenerate) {
-    QRProps.onGenerate({
+  if (onGenerate) {
+    onGenerate({
       nonce: nonce,
-      type: QRProps.type,
-      did: QRProps.did,
-      mode: QRProps.mode,
-      redirectUrl: QRProps.redirectUrl,
+      type: type,
+      did: did,
+      mode: mode,
+      redirectUrl: redirectUrl,
       qrValue: value,
     })
   }
@@ -22,11 +23,11 @@ export const GimlyIDQRCode: FC<QRProps> = (QRProps) => {
   return (
     <QRCode
       value={value}
-      bgColor={QRProps.bgColor}
-      fgColor={QRProps.fgColor}
-      level={QRProps.level}
-      size={QRProps.size}
-      title={QRProps.title}
+      bgColor={bgColor}
+      fgColor={fgColor}
+      level={level}
+      size={size}
+      title={title}
     />
   );
 };
