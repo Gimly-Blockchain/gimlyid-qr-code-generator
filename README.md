@@ -1,7 +1,7 @@
-### Gimlyid-qr-code
+# Gimlyid-qr-code
 A GimlyID QR code component. This library works with React and React Native (using [React Native SVG](https://github.com/react-native-svg/react-native-svg)).
 
-#### Example
+### Example
  ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
