@@ -11,16 +11,18 @@ ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:example:12
  ```
 
 ### API
-| prop                 | type                         | default value |
-| -------------------- | ---------------------------- | ------------- |
-| `type`               | `QRType`                     |               |
-| `did`                | `string`                     |               |
-| `mode`               | `QRMode`                     |               |
-| `bgColor (optional)` | `string`                     | '#FFFFFF'     |
-| `fgColor (optional)` | `string`                     | '#000000'     |
-| `level (optional)`   | `string` (`'L' 'M' 'Q' 'H'`) | 'L'           |
-| `size (optional)`    | `number`                     | 256           |
-| `title (optional)`   | `string`                     |               |
+| prop                    | type                         | default value |
+| ----------------------- | ---------------------------- | ------------- |
+| `type`                  | `QRType`                     |               |
+| `did`                   | `string`                     |               |
+| `mode`                  | `QRMode`                     |               |
+| `redirectUrl`           | `string`                     |               |
+| `bgColor (optional)`    | `string`                     | '#FFFFFF'     |
+| `fgColor (optional)`    | `string`                     | '#000000'     |
+| `level (optional)`      | `string` (`'L' 'M' 'Q' 'H'`) | 'L'           |
+| `size (optional)`       | `number`                     | 256           |
+| `title (optional)`      | `string`                     |               |
+| `onGenerate (optional)` | `Function`                   |               |
 
 ### Installation
 ```shell
