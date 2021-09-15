@@ -6,7 +6,7 @@ export enum QRMode {
   DID_AUTH_SIOP_V2 = 'didauth',
 }
 
-interface QRContent {
+export interface QRContent {
   nonce: string;
   type: QRType;
   did: string;

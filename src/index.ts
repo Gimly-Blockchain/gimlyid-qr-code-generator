@@ -2,5 +2,5 @@ import { memo } from 'react';
 
 import { GimlyIDQRCode } from './GimlyIDQRCode/index';
 
-export { QRType, QRMode } from './types';
+export { QRType, QRMode, QRContent } from './types';
 export default memo(GimlyIDQRCode);
