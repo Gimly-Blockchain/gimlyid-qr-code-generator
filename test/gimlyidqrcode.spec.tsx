@@ -8,8 +8,8 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe("<GimlyIDQRCode /> shallow rendering", () => {
   it("should have props", () => {
-    const wrapper = shallow(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:example:123456789abcdefghi'} mode={QRMode.DID_AUTH_SIOP_V2} />);
-    expect(wrapper.props().value).toContain(`"type":"auth","did":"did:example:123456789abcdefghi","mode":"didauth"`)
+    const wrapper = shallow(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:example'} mode={QRMode.DID_AUTH_SIOP_V2} />);
+    expect(wrapper.props().value).toContain(`"type":"auth","did":"did:eosio:example","mode":"didauth"`)
   });
 });
 

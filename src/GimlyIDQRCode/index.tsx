@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { QRProps } from '../types';
 
-export const GimlyIDQRCode: FC<QRProps> = (QRProps) => {
-  const { type, did, mode, redirectUrl, onGenerate, bgColor, fgColor, level, size, title } = QRProps;
+export const GimlyIDQRCode: FC<QRProps> = (props: QRProps) => {
+  const { type, did, mode, redirectUrl, onGenerate, bgColor, fgColor, level, size, title } = props;
   const nonce = uuidv4();
   const value = `"nonce":"${nonce}","type":"${type}","did":"${did}","mode":"${mode}","redirectUrl":"${redirectUrl}"`;
 
