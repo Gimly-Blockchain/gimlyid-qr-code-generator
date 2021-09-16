@@ -11,7 +11,7 @@ export interface QRContent {
   type: QRType;
   did: string;
   mode: QRMode;
-  redirectUrl: string;
+  redirectUrl?: string;
   qrValue: string;
 }
 
@@ -19,7 +19,7 @@ export interface QRProps {
   type: QRType;
   did: string;
   mode: QRMode;
-  redirectUrl: string;
+  redirectUrl?: string;
   onGenerate?: (content: QRContent) => void;
   bgColor?: string;
   fgColor?: string;
