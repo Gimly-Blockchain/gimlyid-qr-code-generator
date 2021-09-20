@@ -6,16 +6,16 @@ import { QRProps } from '../types';
 
 export const GimlyIDQRCode: FC<QRProps> = (props: QRProps) => {
   const { type, did, mode, redirectUrl, onGenerate, bgColor, fgColor, level, size, title } = props;
-  const nonce = uuidv4();
-  const value = `"nonce":"${nonce}","type":"${type}","did":"${did}","mode":"${mode}","redirectUrl":"${redirectUrl}"`;
+  const state = uuidv4();
+  const value = `"state":"${state}","type":"${type}","did":"${did}","mode":"${mode}","redirectUrl":"${redirectUrl}"`;
 
   if (onGenerate) {
     onGenerate({
-      nonce: nonce,
-      type: type,
-      did: did,
-      mode: mode,
-      redirectUrl: redirectUrl,
+      state,
+      type,
+      did,
+      mode,
+      redirectUrl,
       qrValue: value,
     });
   }
