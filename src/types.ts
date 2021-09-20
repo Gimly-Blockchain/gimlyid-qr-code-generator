@@ -7,7 +7,7 @@ export enum QRMode {
 }
 
 export interface QRContent {
-  nonce: string;
+  state: string;
   type: QRType;
   did: string;
   mode: QRMode;
