@@ -21,7 +21,7 @@ ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:exam
 | `fgColor (optional)`    | `string`                     | '#000000'     | This will set the foreground color of the QR code.                                                                                                                                                       |                                                                                                                                                  |
 | `size (optional)`       | `number`                     | 128           | This will set the size of the QR code.                                                                                                                                                                   |
 | `title (optional)`      | `string`                     |               | This will set the title of the QR code.                                                                                                                                                                  |
-| `onGenerate (optional)` | `Function`                   |               | onGenerate will be called when the QR code is generated and will have access to the QR code content.                                                                                                          |
+| `onGenerate (optional)` | `Function`                   |               | onGenerate will be called when the QR code is generated and will have access to the QR code content.                                                                                                     |
 
 ### Installation
 ```shell
