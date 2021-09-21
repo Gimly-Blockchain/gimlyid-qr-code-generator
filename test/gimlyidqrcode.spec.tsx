@@ -24,7 +24,7 @@ describe('<GimlyIDQRCode /> shallow rendering', () => {
             redirectUrl={'https://example.com'}
         />);
 
-    expect(wrapper.find('QRCodeSurface')).toHaveLength(1);
+    expect(wrapper).toHaveLength(1);
   });
 
   it('should present qr content in onGenerate', () => {

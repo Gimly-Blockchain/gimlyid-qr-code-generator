@@ -14,7 +14,7 @@ describe('<QRCodeSurface /> shallow rendering', () => {
           {}
         </QRCodeSurface>);
 
-    expect(wrapper.find('svg')).toHaveLength(1);
+    expect(wrapper).toHaveLength(1);
   });
 
   it('should set tittle when provided', () => {

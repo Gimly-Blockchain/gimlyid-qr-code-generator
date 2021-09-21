@@ -18,6 +18,6 @@ describe('<QRCodeCell /> shallow rendering', () => {
             transformY={1}
         />);
 
-    expect(wrapper.find('path')).toHaveLength(1);
+    expect(wrapper).toHaveLength(1);
   });
 });
