@@ -1,0 +1,54 @@
+{
+  "name": "gimlyid-qr-code",
+  "version": "0.1.1",
+  "description": "A QR component for Gimly ID",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "run-s build test:* cov",
+    "test:lint": "eslint . --ext .ts",
+    "test:prettier": "prettier \"{src, test}/**/*.(ts|tsx)\" --list-different",
+    "test:unit": "jest",
+    "cov": "jest --coverage",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"{src, test}/**/*.(ts|tsx)\" --write",
+    "fix:lint": "eslint . --ext .ts --fix"
+  },
+  "files": [
+    "/dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-qr-code": "^2.0.2",
+    "short-uuid": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.21",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.0.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.4.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
