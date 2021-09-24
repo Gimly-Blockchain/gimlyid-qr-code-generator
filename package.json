@@ -1,5 +1,5 @@
 {
-  "name": "gimlyid-qr-code",
+  "name": "@sphereon/gimlyid-qr-code",
   "version": "0.1.1",
   "description": "A QR component for Gimly ID",
   "main": "dist/index.js",
