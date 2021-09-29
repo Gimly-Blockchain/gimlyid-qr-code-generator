@@ -7,7 +7,7 @@ import { QRProps } from '../types';
 export const GimlyIDQRCode: FC<QRProps> = (props: QRProps) => {
   const { type, did, mode, redirectUrl, onGenerate, bgColor, fgColor, level, size, title } = props;
   const state = shortUUID.generate();
-  const value = `"state":"${state}","type":"${type}","did":"${did}","mode":"${mode}","redirectUrl":"${redirectUrl}"`;
+  const value = `{"state":"${state}","type":"${type}","did":"${did}","mode":"${mode}","redirectUrl":"${redirectUrl}"}`;
 
   if (onGenerate) {
     onGenerate({
