@@ -40,7 +40,7 @@ ReactDOM.render(<GimlyIDQRCode
 | `onGenerate (optional)` | `Function`                   |               | onGenerate will be called when the QR code is generated and will have access to the QR content.                                                                                                          |
 
 ### DID Auth SIOP
-The purpose of this QR code is to initiate the authentication between two parties redirecting to an endpoint that returns an Authentication Request using using the [`DID Auth SIOP library`](https://github.com/Sphereon-Opensource/did-auth-siop).
+The purpose of this QR code is to initiate the authentication between two parties by redirecting to an endpoint that returns an Authentication Request using using the [`DID Auth SIOP library`](https://github.com/Sphereon-Opensource/did-auth-siop).
 The DID Auth SIOP library is an authentication library for having clients/people conforming to the Self Issued OpenID Provider v2 (SIOPv2) and OpenID Connect for Verifiable Presentations (OIDC4VP) as specified in the OpenID Connect working group.
 
 ### Installation
