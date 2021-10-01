@@ -1,6 +1,6 @@
 {
   "name": "@gimly-blockchain/gimlyid-qr-code",
-  "version": "0.1.0",
+  "version": "0.1.1-UNSTABLE",
   "description": "A QR component for Gimly ID",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
