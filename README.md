@@ -13,16 +13,16 @@ import GimlyIDQRCode, {QRType, QRMode} from 'gimlyid-qr-code';
 
 ReactDOM.render(<GimlyIDQRCode 
                   type={QRType.AUTHENTICATION} 
-                  did={'did:eosio:example'} 
+                  did={'did:ethr:0xcBe71d18b5F1259faA9fEE8f9a5FAbe2372BE8c9'} 
                   mode={QRMode.DID_AUTH_SIOP_V2}
                   redirectUrl={'https://example.com'}
-                  onGenerate={content => console.log(`state=${content.state} 
-                                                      did=${content.did} 
-                                                      type=${content.type} 
-                                                      mode=${content.mode} 
-                                                      redirectUrl=${content.redirectUrl} 
-                                                      value=${content.qrValue}`)}
+                  onGenerate={content => console.log(JSON.stringify(content))}
                 />);
+
+/*
+Example output of onGenerate:
+{"state":"vqKLNzmYYPDmt8YWs9ftYE","type":"auth","did":"did:ethr:0xcBe71d18b5F1259faA9fEE8f9a5FAbe2372BE8c9","mode":"didauth","redirectUrl":"https://example.com","qrValue":"{\"state\":\"vqKLNzmYYPDmt8YWs9ftYE\",\"type\":\"auth\",\"did\":\"did:ethr:0xcBe71d18b5F1259faA9fEE8f9a5FAbe2372BE8c9\",\"mode\":\"didauth\",\"redirectUrl\":\"https://example.com\"}"}
+*/
  ```
 
 ### API
