@@ -1,3 +1,7 @@
+<h1 style="text-align: center; vertical-align: middle">
+  <div style="text-align: center;"><a href="https://www.gimly.io/"><img src="https://images.squarespace-cdn.com/content/v1/5eb2942c4ac101328fe42dc2/1588768338657-JXDRVS09OBP3CUROD2ML/Gimly+Logo_Wit_Transparant_geen+text.png?format=1500w" alt="Gimly" height="80" style="vertical-align: middle" > &nbsp;Gimly</a> &nbsp;</div>
+</h1>
+
 # Gimlyid-qr-code
 A GimlyID QR code component. This library works with React and React Native (using [React Native SVG](https://github.com/react-native-svg/react-native-svg)).
 
@@ -7,7 +11,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import GimlyIDQRCode, {QRType, QRMode} from 'gimlyid-qr-code';
 
-ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:example'} mode={QRMode.DID_AUTH_SIOP_V2}/>);
+ReactDOM.render(<GimlyIDQRCode 
+                  type={QRType.AUTHENTICATION} 
+                  did={'did:eosio:example'} 
+                  mode={QRMode.DID_AUTH_SIOP_V2}
+                  redirectUrl={'https://example.com'}
+                  onGenerate={content => console.log(`state=${content.state} 
+                                                      did=${content.did} 
+                                                      type=${content.type} 
+                                                      mode=${content.mode} 
+                                                      redirectUrl=${content.redirectUrl} 
+                                                      value=${content.qrValue}`)}
+                />);
  ```
 
 ### API
@@ -23,6 +38,10 @@ ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:exam
 | `size (optional)`       | `number`                     | 256           | This will set the size of the QR code.                                                                                                                                                                   |
 | `title (optional)`      | `string`                     |               | This will set the title of the QR code.                                                                                                                                                                  |
 | `onGenerate (optional)` | `Function`                   |               | onGenerate will be called when the QR code is generated and will have access to the QR content.                                                                                                          |
+
+### DID Auth SIOP
+The purpose of this QR code is to initiate the authentication between two parties redirecting to an endpoint that returns an Authentication Request using using the [`DID Auth SIOP library`](https://github.com/Sphereon-Opensource/did-auth-siop).
+The DID Auth SIOP library is an authentication library for having clients/people conforming to the Self Issued OpenID Provider v2 (SIOPv2) and OpenID Connect for Verifiable Presentations (OIDC4VP) as specified in the OpenID Connect working group.
 
 ### Installation
 ```shell
