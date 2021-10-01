@@ -5,7 +5,7 @@ A GimlyID QR code component. This library works with React and React Native (usi
  ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GimlyIDQRCode, {QRType, QRMode} from 'gimlyid-qr-code';
+import GimlyIDQRCode, {QRType, QRMode} from '@gimly-blockchain/gimlyid-qr-code';
 
 ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:example'} mode={QRMode.DID_AUTH_SIOP_V2}/>);
  ```
@@ -26,7 +26,7 @@ ReactDOM.render(<GimlyIDQRCode type={QRType.AUTHENTICATION} did={'did:eosio:exam
 
 ### Installation
 ```shell
-yarn add gimlyid-qr-code
+yarn add @gimly-blockchain/gimlyid-qr-code
 ```
 
 When using this library with React Native, you will also need to have [`react-native-svg`](https://github.com/react-native-svg/react-native-svg#installation) installed.
