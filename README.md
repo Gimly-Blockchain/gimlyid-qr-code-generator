@@ -1,5 +1,5 @@
-<h1 style="text-align: center; vertical-align: middle">
-  <div style="text-align: center;"><a href="https://www.gimly.io/"><img src="https://images.squarespace-cdn.com/content/v1/5eb2942c4ac101328fe42dc2/1588768338657-JXDRVS09OBP3CUROD2ML/Gimly+Logo_Wit_Transparant_geen+text.png?format=1500w" alt="Gimly" height="80" style="vertical-align: middle" > &nbsp;Gimly</a> &nbsp;</div>
+<h1 align="center">
+  <a href="https://www.gimly.io/"><img src="https://avatars.githubusercontent.com/u/64525639?s=200&v=4" alt="Gimly" width="180"></a>
 </h1>
 
 # Gimlyid-qr-code
