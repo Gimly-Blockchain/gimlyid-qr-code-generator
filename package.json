@@ -1,6 +1,6 @@
 {
   "name": "@gimly-blockchain/gimlyid-qr-code-generator",
-  "version": "0.2.0-UNSTABLE",
+  "version": "0.2.0",
   "description": "A QR generator component for Gimly ID",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
