@@ -1,9 +1,9 @@
 <h1 align="center">
-  <a href="https://www.gimly.io/"><img src="https://avatars.githubusercontent.com/u/64525639?s=200&v=4" alt="Gimly" width="180"></a>
+  <a href="https://www.gimly.io/"><img src="https://avatars.githubusercontent.com/u/64525639?s=200&v=4" alt="Gimly" width="180"></a><br>
+  GimlyID QR code Generator
 </h1>
 
-# Gimlyid-qr-code
-A GimlyID QR code component. This library works with React and React Native (using [React Native SVG](https://github.com/react-native-svg/react-native-svg)).
+A GimlyID QR code generator component. This library works with React and React Native (using [React Native SVG](https://github.com/react-native-svg/react-native-svg)). It is a simple way to generate a QR code with a unique state value when you request a page that has the component installed.
 
 ### Example
  ```js

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import QRCode from 'react-qr-code';
-import shortUUID from "short-uuid"
+import shortUUID from 'short-uuid';
 
 import { QRProps } from '../types';
 
